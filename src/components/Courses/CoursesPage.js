@@ -23,12 +23,13 @@ class CoursesPage extends React.Component {
     }
   }
 
-  handleDeleteCourse(course) {
+  async handleDeleteCourse(course) {
     toast.success(`Course ${course.title} deleted`);
-    this.props.actions.deleteCourse(course)
-      .catch(err => {
-        toast.error(`Failed to delete ${course.title} with ${err.message}`, { autoClose: false });
-      });
+    try {
+      await this.props.actions.deleteCourse(course);
+    }catch(err) {
+      toast.error(`Failed to delete ${course.title} with ${err.message}`, { autoClose: false });
+    }
   }
 
   render() {
