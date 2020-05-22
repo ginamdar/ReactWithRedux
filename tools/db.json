@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Securing React Apps with Auth0",
       "slug": "react-auth0-authentication-security",
-      "authorId": 2,
+      "authorId": 1,
       "category": "JavaScript"
     },
     {
@@ -105,10 +105,18 @@
     {
       "id": 15,
       "title": "Bla Bla",
-      "authorId": 3,
+      "authorId": 1,
       "category": "Bla Bla Bla Bla",
       "createdAt": 1589950911923,
       "slug": "bla-bla"
+    },
+    {
+      "id": 16,
+      "title": "React With Redux",
+      "authorId": 1,
+      "category": "Intermediate",
+      "createdAt": 1590118674786,
+      "slug": "react-with-redux"
     }
   ],
   "authors": [
